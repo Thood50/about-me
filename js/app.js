@@ -28,7 +28,7 @@ var questionThree = prompt('Does Tyler like to travel?');
 var answerThree = questionThree.toLowerCase();
 if( (answerThree === 'yes') || (answerThree === 'y') ) {
     console.log('Correct');
-    correct
+    correctCount++
     alert('Love love love seeing new places and new cultures!!!');
 } else {
     console.log('Incorrect');
@@ -39,6 +39,7 @@ var questionFour = prompt('Does Tyler speak a foreign language?');
 var answerFour = questionFour.toLowerCase();
 if( (answerFour === 'yes') || (answerFour === 'y') ) {
     console.log('Correct');
+    correctCount++
     alert('Ja Miche Ich!!!! Thats german for yes i do xD');
 } else {
     console.log('Incorrect');
@@ -52,6 +53,7 @@ if( (answerFive === 'yes') || (answerFive === 'y') ) {
     alert('LOL I like the cats that dont have worse attitudes then the chicks in Mean Girls');
 } else {
     console.log('Correct');
+    correctCount++
     alert('Its true, but dont get me wrong I like some cats, if they are chill hahah.');
 };
 
@@ -64,6 +66,7 @@ while(questionSixGuesses < 4) {
     questionSixGuesses++
     if( questionSix === '24') {
         console.log('Correct');
+        correctCount++
         alert('You had a 4/10 chance, you got lucky...');
         break;
     } else {
@@ -89,6 +92,7 @@ while(questionSevenGuesses < 6) {
     var answerSeven = questionSeven.toLowerCase();
     if( (answerSeven === bestDogs[0]) || (answerSeven === bestDogs[1]) ) {
         console.log('correct');
+        correctCount++
         alert('German shepherds and Siberian Husky are the biggest and fluffiest of them all!!!!');
         break;
     } else {
@@ -99,8 +103,14 @@ while(questionSevenGuesses < 6) {
             break;
         }
         console.log('Incorrect');
-        alert('Try again! ' + questionSevenGuesses + '/6!')
+        alert('Try again! ' + questionSevenGuesses + '/6!');
     }
 }
 
-alert('Wow you got ' + correctCount + '/7!!!!')
+if ( correctCount >= 4) {
+    console.log(correctCount + '/7. Pass');
+    alert("Wow you got " + correctCount + "/7!!!! Not bad, kinda creepy actually xD");
+} else {
+    console.log(correctCount + '/7. Fail');
+    alert("Honestly not even suprised you got " + correctCount + '/7. You looked like a dummy when you walked in xD');
+}

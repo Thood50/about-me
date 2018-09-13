@@ -46,7 +46,7 @@ li {
 }
 
 footer {
-    
+    background: black;
     padding: 50px;
     color: rgb(243, 234, 234);
     font-size: 50px;
@@ -73,7 +73,7 @@ footer {
 }
 
 #q6 {
-    
+    margin-left: 100px;
 }
 
 #footer {

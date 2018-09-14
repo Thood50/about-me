@@ -6,7 +6,7 @@ var questionOne = prompt('Does Tyler like puppies');
 var questionTwo = prompt('Does Tyler like cake?');
 var questionThree = prompt('Does Tyler like to travel?');
 var questionFour = prompt('Does Tyler speak a foreign language?');
-var questionFive = prompt('Does Tyler like cats?')
+var questionFive = prompt('Does Tyler like cats?');
 
 var answerOne = questionOne.toLowerCase();
 var answerTwo = questionTwo.toLowerCase();
@@ -15,15 +15,15 @@ var answerFour = questionFour.toLowerCase();
 var answerFive = questionFive.toLowerCase();
 
 var correctOne = alert('Honestly who doesnt love puppies?!?!?!?');
-var correctTwo = alert('Lucky guess...'); 
-var correctThree = alert('Love love love seeing new places and new cultures!!!'); 
-var correctFour = alert('Ja Miche Ich!!!! Thats german for yes i do xD'); 
-var correctFive = alert('Its true, but dont get me wrong I like some cats, if they are chill hahah.'); 
+var correctTwo = alert('Lucky guess...');
+var correctThree = alert('Love love love seeing new places and new cultures!!!');
+var correctFour = alert('Ja Miche Ich!!!! Thats german for yes i do xD');
+var correctFive = alert('Its true, but dont get me wrong I like some cats, if they are chill hahah.');
 
-var incorrectOne = alert('Do me a favor, check and see if you have a pulse....'); 
+var incorrectOne = alert('Do me a favor, check and see if you have a pulse....');
 var incorrectTwo = alert('Not a big fan of cake or any desserts for that matter xD');
-var incorrectThree = alert('Wow, did you just assume that I dont go outside?'); 
-var incorrectFour = alert('I love culture, spent a summer learning german to get to know my own culture!!!'); 
+var incorrectThree = alert('Wow, did you just assume that I dont go outside?');
+var incorrectFour = alert('I love culture, spent a summer learning german to get to know my own culture!!!');
 var incorrectFive = alert('LOL I like the cats that dont have worse attitudes then the chicks in Mean Girls');
 
 
@@ -34,8 +34,8 @@ var answerArray = [answerOne, answerTwo, answerThree, answerFour, answerFive];
 
 function guessingGame() {
   for(var i = 0; i <= questionArray.length; i++) {
-    questionArray[i]
-    answerArray[i]
+    questionArray[i];
+    answerArray[i];
     if( (answerArray === 'yes') || (answerArray === 'y') ) {
       console.log('Correct');
       correctCount++;

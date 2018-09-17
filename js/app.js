@@ -2,29 +2,29 @@
 
 var correctCount = 0;
 
-var questionOne = prompt('Does Tyler like puppies');
-var questionTwo = prompt('Does Tyler like cake?');
-var questionThree = prompt('Does Tyler like to travel?');
-var questionFour = prompt('Does Tyler speak a foreign language?');
-var questionFive = prompt('Does Tyler like cats?');
+var questionOne = 'Does Tyler like puppies';
+var questionTwo = 'Does Tyler like cake?';
+var questionThree = 'Does Tyler like to travel?';
+var questionFour = 'Does Tyler speak a foreign language?';
+var questionFive = 'Does Tyler like cats?';
 
-var answerOne = questionOne.toLowerCase();
-var answerTwo = questionTwo.toLowerCase();
-var answerThree = questionThree.toLowerCase();
-var answerFour = questionFour.toLowerCase();
-var answerFive = questionFive.toLowerCase();
+var answerOne = 'yes';
+var answerTwo = 'no';
+var answerThree = 'yes';
+var answerFour = 'yes';
+var answerFive = 'no';
 
-var correctOne = alert('Honestly who doesnt love puppies?!?!?!?');
-var correctTwo = alert('Lucky guess...');
-var correctThree = alert('Love love love seeing new places and new cultures!!!');
-var correctFour = alert('Ja Miche Ich!!!! Thats german for yes i do xD');
-var correctFive = alert('Its true, but dont get me wrong I like some cats, if they are chill hahah.');
+var correctOne = 'Honestly who doesnt love puppies?!?!?!?';
+var correctTwo = 'Lucky guess...';
+var correctThree = 'Love love love seeing new places and new cultures!!!';
+var correctFour = 'Ja Miche Ich!!!! Thats german for yes i do xD';
+var correctFive = 'Its true, but dont get me wrong I like some cats, if they are chill hahah.';
 
-var incorrectOne = alert('Do me a favor, check and see if you have a pulse....');
-var incorrectTwo = alert('Not a big fan of cake or any desserts for that matter xD');
-var incorrectThree = alert('Wow, did you just assume that I dont go outside?');
-var incorrectFour = alert('I love culture, spent a summer learning german to get to know my own culture!!!');
-var incorrectFive = alert('LOL I like the cats that dont have worse attitudes then the chicks in Mean Girls');
+var incorrectOne = 'Do me a favor, check and see if you have a pulse....';
+var incorrectTwo = 'Not a big fan of cake or any desserts for that matter xD';
+var incorrectThree ='Wow, did you just assume that I dont go outside?';
+var incorrectFour = 'I love culture, spent a summer learning german to get to know my own culture!!!';
+var incorrectFive = 'LOL I like the cats that dont have worse attitudes then the chicks in Mean Girls';
 
 
 var correctArray = [correctOne, correctTwo, correctThree, correctFour, correctFive];
@@ -33,86 +33,19 @@ var questionArray = [questionOne, questionTwo, questionThree, questionFour, ques
 var answerArray = [answerOne, answerTwo, answerThree, answerFour, answerFive];
 
 function guessingGame() {
-  for(var i = 0; i <= questionArray.length; i++) {
-    questionArray[i];
-    answerArray[i];
-    if( (answerArray === 'yes') || (answerArray === 'y') ) {
+  for(var i = 0; i < questionArray.length; i++) {
+    var answer = prompt(questionArray[i]);
+    answer = answer.toLowerCase();
+    if( answer === answerArray[i] ) {
       console.log('Correct');
       correctCount++;
-      correctArray[i];
+      alert(correctArray[i]);
     } else {
       console.log('Incorrect');
-      incorrectArray[i];
+      alert(incorrectArray[i]);
     }
   }
 }
-
-guessingGame();
-
-// function functionOne() {
-//   var questionOne = prompt('Does Tyler like puppies');
-//   var answerOne = questionOne.toLowerCase();
-//   if( (answerOne === 'yes') || (answerOne === 'y') ) {
-//     console.log('Correct');
-//     correctCount++;
-//     alert('Honestly who doesnt love puppies?!?!?!?');
-//   } else {
-//     console.log('Incorrect');
-//     alert('Do me a favor, check and see if you have a pulse....');
-//   }
-// }
-
-// function functionTwo() {
-//   var questionTwo = prompt('Does Tyler like cake?');
-//   var answerTwo = questionTwo.toLowerCase();
-//   if( (answerTwo === 'yes') || (answerTwo === 'y') ) {
-//     console.log('Incorrect');
-//     alert('Not a big fan of cake or any desserts for that matter xD');
-//   } else {
-//     console.log('Correct');
-//     correctCount++;
-//     alert('Lucky guess...');
-//   }
-// }
-
-// function functionThree() {
-//   var questionThree = prompt('Does Tyler like to travel?');
-//   var answerThree = questionThree.toLowerCase();
-//   if( (answerThree === 'yes') || (answerThree === 'y') ) {
-//     console.log('Correct');
-//     correctCount++;
-//     alert('Love love love seeing new places and new cultures!!!');
-//   } else {
-//     console.log('Incorrect');
-//     alert('Wow, did you just assume that I dont go outside?');
-//   }
-// }
-
-// function functionFour() {
-//   var questionFour = prompt('Does Tyler speak a foreign language?');
-//   var answerFour = questionFour.toLowerCase();
-//   if( (answerFour === 'yes') || (answerFour === 'y') ) {
-//     console.log('Correct');
-//     correctCount++;
-//     alert('Ja Miche Ich!!!! Thats german for yes i do xD');
-//   } else {
-//     console.log('Incorrect');
-//     alert('I love culture, spent a summer learning german to get to know my own culture!!!');
-//   }
-// }
-
-// function functionFive() {
-//   var questionFive = prompt('Does Tyler like cats?')
-//   var answerFive = questionFive.toLowerCase();
-//   if( (answerFive === 'yes') || (answerFive === 'y') ) {
-//     console.log('Incorrect');
-//     alert('LOL I like the cats that dont have worse attitudes then the chicks in Mean Girls');
-//   } else {
-//     console.log('Correct');
-//     correctCount++;
-//     alert('Its true, but dont get me wrong I like some cats, if they are chill hahah.');
-//   }
-// }
 
 function functionSix() {
   var questionSixGuesses = 0;
@@ -166,11 +99,7 @@ function functionSeven() {
   }
 }
 
-// functionOne();
-// functionTwo();
-// functionThree();
-// functionFour();
-// functionFive();
+guessingGame();
 functionSix();
 functionSeven();
 

@@ -10,6 +10,7 @@ body {
     background-image: url("../img/bigspace.jpg");
     background-repeat: no-repeat;
     color: white;
+    width: 3000px;
     
 }
 
@@ -18,6 +19,7 @@ h1 {
     font-weight: bold;
     position: fixed;
     display: inline;
+    
 }
 
 h3 {
@@ -54,31 +56,32 @@ footer {
 
 #q1 {
     margin-top: 125px;
+    margin-left: 10%;
 }
 
 #q2 {
-    margin-left: 1000px;
+    margin-left: 25%;
 }
 
 #q3 {
-    margin-left: 750px;
+    margin-left: 50%;
 }
 
 #q4 {
-    margin-left: 1200px;
+    margin-left: 60%;
 }
 
 #q5 {
-    margin-left: 500px;
+    margin-left: 40%;
 }
 
 #q6 {
-    margin-left: 100px;
+    margin-left: 20%;
 }
 
 #footer {
     width: 1200px;  
-    margin-left: 700px;  
+    margin-left: 1400px;  
     text-align: left; 
 }
 
@@ -86,5 +89,9 @@ footer {
 p {
     width: 1200px;
     font-size: 35px;
-    margin-left: 1275px;
+    margin-left: 2000px;
 }
+
+#sectionTwo [
+    margin-left: 10%;
+]
